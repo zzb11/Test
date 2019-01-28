@@ -4,15 +4,9 @@ import ClockHooks from "./common/Clock/ClockHooks";
 import Upload from "./common/Upload/Upload";
 import { Button } from "antd";
 import Todos from "./components/todos/index";
+import Form from "./components/form/Index";
 import "./App.css";
 class App extends Component {
-  constructor(props) {
-    super(props);
-    console.log(this);
-  }
-  ck() {
-    console.log(this);
-  }
   render() {
     // this.ck();
     return (
@@ -21,7 +15,8 @@ class App extends Component {
         {/* <Clock endTime={new Date("2019-01-22 15:00:00").getTime()} startTime={new Date("2019-01-22 14:00:00").getTime()}></Clock> */}
         {/* <ClockHooks num={"dd"}></ClockHooks> */}
         {/* <Button type="primary">Button</Button> */}
-        <Todos />
+        {/* <Todos /> */}
+        <Form />
       </div>
     );
   }
