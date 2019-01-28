@@ -12,6 +12,7 @@ export default class TodoList extends Component {
             // id={ele.id}
             // complete={ele.complete}
             isComplete={id => this.props.isComplete(id)}
+            delete={id => this.props.delete(id)}
           />
         ))}
       </>

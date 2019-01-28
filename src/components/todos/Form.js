@@ -7,6 +7,9 @@ export default class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    if (this.state.text === "") {
+      return;
+    }
     this.props.submit({
       id: shortid.generate(),
       text: this.state.text,
